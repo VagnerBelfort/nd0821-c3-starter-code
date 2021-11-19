@@ -16,11 +16,11 @@ def test_api_locally_get_root():
 
     with TestClient(census_app) as client:
         r = client.get("/")
-    bs = BeautifulSoup(r.content, "html.parser")
-    res = bs.find("h1").get_text()
+    # bs = BeautifulSoup(r.content, "html.parser")
+    # res = bs.find("h1").get_text()
 
     assert r.status_code == 200
-    assert res == "Hello, Welcome to the Census Bureau Salary Prediction App!"
+    assert r.json() == {"hello": "word"}
 
 
 def test_api_locally_get_predictions_inf1():

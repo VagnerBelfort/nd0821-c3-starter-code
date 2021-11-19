@@ -77,8 +77,8 @@ async def startup_event():
 # GET must be on the root domain and give a greeting
 @census_app.get("/")
 async def root(request: Request):
-    template = templates.TemplateResponse("home.html", {"request": request},)
-    return template
+    # template = templates.TemplateResponse("home.html", {"request": request},)
+    return {"hello": "word"}
 
 
 # https://github.com/bodywork-ml/bodywork-scikit-fastapi-project
