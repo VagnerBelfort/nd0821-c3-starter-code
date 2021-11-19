@@ -1,6 +1,5 @@
 import json
 from fastapi.testclient import TestClient
-from bs4 import BeautifulSoup
 
 # Import our app from main.py.
 from main import census_app
