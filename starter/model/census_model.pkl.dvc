@@ -1,0 +1,4 @@
+outs:
+- md5: 1833f7546ce7f970756d42911f193535
+  size: 584236
+  path: census_model.pkl
